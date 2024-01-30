@@ -1,4 +1,4 @@
-
+<?php
 class Persona {
     public $nome;
     public $cognome;
@@ -18,7 +18,7 @@ class Persona {
 
     public function setAge($newAge) {
         if (!is_int($newAge)) {
-            throw new Exception("L'età inserit deve essere un numero intero");
+            throw new Exception("L'età inserita deve essere un numero intero");
         }
         $this->age = $newAge;
     }
